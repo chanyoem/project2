@@ -9,6 +9,26 @@
 body {
     /* background-image: url("bg_texture.jpg"); */
     background-color: #201A1A;
+
+}
+.background{
+    position: relative;
+    /* background-image: url("../media/images/texture.jpg"); */
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../media/images/texture3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.25; /* Adjust the opacity value as needed (from 0 to 1) */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
 
 .header {
@@ -17,12 +37,20 @@ body {
     /* background-image: radial-gradient(#FFDAD7 10%, #201A1A 60%);
     margin-left: 300px;
     margin-right: 300px; */
+    background-image: url("../media/images/smoke.gif");
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .header img {
     width: 500px;
 }
 
+.intro_container {
+    background-image: linear-gradient(black, #00000000);
+}
 .row1 {
     display: flex;
     flex-direction: row;
@@ -34,7 +62,7 @@ body {
     width: 100%;
     flex-basis: 50%;
     text-align: center;
-    background-color: #5D3F3D;
+    /* background-color: #5D3F3D; */
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -59,6 +87,7 @@ body {
 .spacer {
     height: 20px;
 }
+
 .row2 {
     display: flex;
     flex-direction: row;
