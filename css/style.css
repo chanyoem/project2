@@ -9,7 +9,7 @@
 body {
     background-color: #201A1A;
 }
-
+/* background texture/overlay */
 .background {
     position: relative;
 }
@@ -28,7 +28,7 @@ body {
     opacity: 0.25;
     z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
-
+/* header background */
 .header {
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@ body {
     background-position: center;
     background-size: cover;
 }
-
+/* header logo */
 .header img {
     width: 500px;
 }
@@ -88,17 +88,19 @@ body {
 .row2 {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
 }
-
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .col1 {
     width: 100%;
     flex-basis: 33%;
     text-align: center;
     padding: 10px;
     margin: 10px;
-    background-color: #7B2E0D;
     color: #FFDBCF;
 }
 
@@ -108,13 +110,17 @@ body {
     font-style: normal;
 }
 
+#caption1, #caption2, #caption3 {
+    background-color: #7B2E0D;
+    padding: 15px;
+}
+
 .col2 {
     width: 100%;
     flex-basis: 33%;
     text-align: center;
     padding: 10px;
     margin: 10px;
-    background-color: #7B2E0D;
     color: #FFDBCF;
 }
 
@@ -130,7 +136,6 @@ body {
     text-align: center;
     padding: 10px;
     margin: 10px;
-    background-color: #7B2E0D;
     color: #FFDBCF;
 }
 
@@ -138,4 +143,20 @@ body {
     font-family: "Protest Revolution", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flame {
+    width: 100%;
+    flex-basis: 33%;
+    text-align: center;
+}
+
+.flame img:hover {
+    background-image: radial-gradient(#ebb264, #00000000, #00000000);
 }
