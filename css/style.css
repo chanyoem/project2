@@ -115,6 +115,18 @@ body {
     padding: 15px;
 }
 
+#caption1 ul {
+    padding: 15px;
+}
+
+#caption2 ul {
+    padding: 15px;
+}
+
+#caption3 ul {
+    padding: 15px;
+}
+
 .col2 {
     width: 100%;
     flex-basis: 33%;
