@@ -7,13 +7,11 @@
 }
 
 body {
-    /* background-image: url("bg_texture.jpg"); */
     background-color: #201A1A;
-
 }
-.background{
+
+.background {
     position: relative;
-    /* background-image: url("../media/images/texture.jpg"); */
 }
 
 .background::before {
@@ -27,16 +25,14 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: 0.25; /* Adjust the opacity value as needed (from 0 to 1) */
+    opacity: 0.25;
     z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
 
 .header {
-    /* background-color: aliceblue; */
-    text-align: center;
-    /* background-image: radial-gradient(#FFDAD7 10%, #201A1A 60%);
-    margin-left: 300px;
-    margin-right: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url("../media/images/smoke.gif");
     transform: rotate(180deg);
     background-repeat: no-repeat;
@@ -51,6 +47,7 @@ body {
 .intro_container {
     background-image: linear-gradient(black, #00000000);
 }
+
 .row1 {
     display: flex;
     flex-direction: row;
@@ -104,6 +101,13 @@ body {
     background-color: #7B2E0D;
     color: #FFDBCF;
 }
+
+.col1 h1 {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .col2 {
     width: 100%;
     flex-basis: 33%;
@@ -113,6 +117,13 @@ body {
     background-color: #7B2E0D;
     color: #FFDBCF;
 }
+
+.col2 h1 {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .col3 {
     width: 100%;
     flex-basis: 33%;
@@ -121,4 +132,10 @@ body {
     margin: 10px;
     background-color: #7B2E0D;
     color: #FFDBCF;
+}
+
+.col3 h1 {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
